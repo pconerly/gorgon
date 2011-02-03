@@ -21,5 +21,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     ('^time/plus/(\d{1,2})/$', 'views.hours_ahead'),
     (r'^accounts/', include('registration.backends.default.urls')),  #include('pete_register.urls')),
+    #(r'^hw/a=(\d{1,})&b=(\d{1,})/$', 'views.homework'),
+    (r'^hw/$', 'views.homework'),
 
 )
